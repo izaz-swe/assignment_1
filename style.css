@@ -52,6 +52,7 @@ li a:hover {
 .btn {
   padding: 5px;
   border-radius: 3px;
+  font-size: large;
 }
 
 .btn-white{
