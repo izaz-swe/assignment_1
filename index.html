@@ -8,27 +8,26 @@
   <script src="https://kit.fontawesome.com/ea8e1f032c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <section class="header">
-      <div class="img-100">
-        <a href="#home-page"><img class="logo-img" src="./images/logo.png" alt=""></a>
-      </div>
-      <div>
-          <ul class="nav-items">
-            <li class="nav-item"><a href="#about-page">About</a></li>
-            <li class="nav-item"><a href="">Eperience</a></li>
-            <li class="nav-item"><a href="">Project</a></li>
-            <li class="nav-item"><a href="">Contact</a></li>
-          </ul>
-      </div>
-      <div >
-        <button class="btn btn-white">
-          Resume
-        </button>
-        <button class="btn btn-white">
-          Hire Me
-        </button>
-      </div>
-  </section>
+  <nav>
+    <input type="checkbox" name="" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+    <div class="logo img-100">
+      <a href="#home-page"><img class="logo-img" src="./images/logo.png" alt=""></a>
+    </div>
+    <ul id="navbar" class="active">
+      <li><a href="#about-page">About</a></li>
+      <li><a href="">Experience</a></li>
+      <li><a href="">Project</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button class="btn btn-white">Resume</button>
+      </li>
+      <li><button class="btn btn-white">
+        Hire Me
+      </button></li>
+    </ul>
+  </nav>
   <section id="home-page" class="container">
         <h1>
           Hi, I'm Izaz Ahmmed Tuhin
@@ -63,6 +62,46 @@
       </div>
     </div>
   </section>
-  
+  <section id="contact">
+    <div class="contact-form">
+      <h1>Contact Us</h1>
+      <div class="contact-container">
+          <div class="main">
+              <div class="contact-content">
+                  <h2>Contact Us</h2>
+                  <div>
+                    <div class="box">
+                      <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                      <div class="text">
+                        <h3>Address</h3>
+                        <p>DSC, Khagan, Savar <br>Dhaka, Bangladesh</p>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <div class="icon"> <i class="fa-solid fa-phone"></i></i> </div>
+                      <div class="text">
+                        <h3>Mobile</h3>
+                        <p>+8801918267179</p>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <div class="icon"><i class="fa-solid fa-envelope"></i></i></div>
+                      <div class="text">
+                        <h3>Email</h3>
+                        <p>izaz.swe@outlook.com</p>
+                      </div>
+                    </div>
+                    <button id="message-btn" onclick="creatContactForm()" class="contact-btn"> Send A Message</button>
+                  </div>
+              </div>
+              <div class="form-img">
+                  <img id="contact-img" src="./images/bg1.png" alt="">
+                  <div id="message"></div>
+              </div>
+          </div>
+      </div>
+  </div> 
+  </section>
+  <script src="./script.js"></script>
 </body>
 </html>
